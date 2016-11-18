@@ -1,0 +1,133 @@
+/*************************
+'styles' Stylesheet
+Animal Game
+C. 2016 John Garrison
+*************************/
+
+
+/*************************
+Fonts
+*************************/
+
+@import url('https://fonts.googleapis.com/css?family=Chelsea+Market');
+@import url('https://fonts.googleapis.com/css?family=Delius+Unicase');
+
+/*************************
+Variables
+*************************/
+
+// fonts
+$title-fancy: 'Chelsea Market', arial;
+$text-fancy: 'Delius Unicase', arial;
+// colors
+$brown: #b27031;
+$lightbrown: #96752a;
+$blue: #05b57d;
+
+/*************************
+General Elements
+*************************/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #3a3a3a, #191919);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-fancy;
+}
+
+p {
+    font-family: $text-fancy;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.btn {
+    background: #b35e14;
+    background-image: -webkit-linear-gradient(top, #b35e14, #d17614);
+    background-image: -moz-linear-gradient(top, #b35e14, #d17614);
+    background-image: -ms-linear-gradient(top, #b35e14, #d17614);
+    background-image: -o-linear-gradient(top, #b35e14, #d17614);
+    background-image: linear-gradient(to bottom, #b35e14, #d17614);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: $title-fancy;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.btn:hover {
+    background: #229db3;
+    background-image: -webkit-linear-gradient(top, #229db3, #1a829c);
+    background-image: -moz-linear-gradient(top, #229db3, #1a829c);
+    background-image: -ms-linear-gradient(top, #229db3, #1a829c);
+    background-image: -o-linear-gradient(top, #229db3, #1a829c);
+    background-image: linear-gradient(to bottom, #229db3, #1a829c);
+    text-decoration: none;
+}
+
+/*************************
+Header/Title
+*************************/
+
+.header {
+    background-attachment: fixed;
+    background-image: url(../images/animals_bg.jpg);
+    background-size: cover;
+    width: 100%;
+
+    #maintitle {
+        font-size: 3.2em;
+        text-align: center;
+        margin: 0;
+        padding-top: 1.2em;
+        padding-bottom: 1.2em;
+        color: $brown;
+        text-shadow: .1em .1em .1em #619992;
+        letter-spacing: .12em;
+    }
+}
+
+#instructions {
+    text-align: center;
+    margin: 0 15%;
+    padding: 1.4em 0;
+    color: white;
+}
+
+.bg-stripe {
+    margin-top: 0;
+    background-color: $brown;
+    width: 100%;
+}
+
+/*************************
+Quiz/Question area
+*************************/
+
+#beginBtn {
+    margin: 0 auto;
+    display: block;
+    margin-top: 4.5em;
+}
+
+#question {
+    margin: 0 auto;
+    width: 85%;
+    text-align: center;
+    font-family: $title-fancy;
+    font-size: 1.6em;
+    color: white;
+}
+
+#questionNum {
+    color: $brown;
+}
