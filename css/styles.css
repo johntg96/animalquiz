@@ -89,7 +89,8 @@ Quiz/Question area
 #beginBtn {
   margin: 0 auto;
   display: block;
-  margin-top: 4.5em; }
+  margin-top: 4.5em;
+  outline: none; }
 
 #question {
   margin: 0 auto;
@@ -97,7 +98,22 @@ Quiz/Question area
   text-align: center;
   font-family: "Chelsea Market", arial;
   font-size: 1.6em;
-  color: white; }
+  color: white;
+  text-align: left;
+  padding-left: 1.5em; }
 
 #questionNum {
   color: #b27031; }
+
+#questionText {
+  font-size: .8em; }
+  #questionText p {
+    font-family: "Chelsea Market", arial; }
+
+#choices {
+  font-family: "Delius Unicase", arial;
+  font-size: .8em; }
+
+#submitA {
+  margin-top: 1.5em;
+  outline: none; }

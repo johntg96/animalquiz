@@ -10,18 +10,33 @@
         <h1 id="maintitle">Animal Quiz</h1>
     </div>
     <div class="bg-stripe">
-        <p id="instructions">Do you occasionally feel like a dirty animal?<br/>Let's figure out which animal best matches your personality!</p>
+        <p id="instructions">Do you occasionally feel like a dirty animal&nbsp;<span id="nickname"></span>?<br/>Let's figure out which animal best matches your personality!</p>
     </div>
-
+    <!-- launches startQuiz() to begin the quiz -->
     <button id="beginBtn" class="btn">Begin Quiz</button>
 
-    <div id="question" class="hide"><span style="color:#b27031">Q</span><span style="color:#70441a">u</span><span style="color:#b27031">e</span><span style="color:#70441a">s</span><span style="color:#b27031">t</span><span style="color:#70441a">i</span><span style="color:#b27031">o</span><span style="color:#70441a">n</span>&nbsp;<span id="questionNum">1</span><span style="color:#70441a">:</span><br/>
-        <span id="questionText"></span><br/>
-        <div id="choices">
+    <!-- "Question #: " -->
+    <div id="question" class="hide">
+        <span style="color:#b27031">Q</span>
+        <span style="color:#70441a">u</span>
+        <span style="color:#b27031">e</span>
+        <span style="color:#70441a">s</span>
+        <span style="color:#b27031">t</span>     
+        <span style="color:#70441a">i</span>
+        <span style="color:#b27031">o</span>
+        <span style="color:#70441a">n</span>&nbsp;
 
-        </div>
+        <span id="questionNum"></span><span style="color:#70441a">&nbsp;:</span><br/>
+        <!-- the text of the question is displayed here -->
+        <div id="questionText"></div>
+        <!-- corresponding multiple choice answers here -->
+        <form id="choices">
+            
+        </form>
+
         <button id="submitA" class="btn">Next</button>
     </div>
+
     <!-- JQuery 3.1.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- main game JS -->  
